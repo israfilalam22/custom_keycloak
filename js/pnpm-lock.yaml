@@ -81,8 +81,8 @@ importers:
         specifier: ^4.113.0
         version: 4.113.0(react-dom@18.2.0)(react@18.2.0)
       i18next:
-        specifier: ^23.2.8
-        version: 23.2.8
+        specifier: ^23.10.0
+        version: 23.10.0
       i18next-http-backend:
         specifier: ^2.2.1
         version: 2.2.1
@@ -106,7 +106,7 @@ importers:
         version: 7.44.3(react@18.2.0)
       react-i18next:
         specifier: ^13.0.1
-        version: 13.0.1(i18next@23.2.8)(react-dom@18.2.0)(react@18.2.0)
+        version: 13.0.1(i18next@23.10.0)(react-dom@18.2.0)(react@18.2.0)
       react-router-dom:
         specifier: 6.12.1
         version: 6.12.1(react-dom@18.2.0)(react@18.2.0)
@@ -178,8 +178,8 @@ importers:
         specifier: ^5.0.2
         version: 5.0.2
       i18next:
-        specifier: ^23.2.8
-        version: 23.2.8
+        specifier: ^23.10.0
+        version: 23.10.0
       i18next-http-backend:
         specifier: ^2.2.1
         version: 2.2.1
@@ -209,7 +209,7 @@ importers:
         version: 7.44.3(react@18.2.0)
       react-i18next:
         specifier: ^13.0.1
-        version: 13.0.1(i18next@23.2.8)(react-dom@18.2.0)(react@18.2.0)
+        version: 13.0.1(i18next@23.10.0)(react-dom@18.2.0)(react@18.2.0)
       react-router:
         specifier: ^6.12.1
         version: 6.12.1(react@18.2.0)
@@ -523,6 +523,12 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       regenerator-runtime: 0.13.11
+
+  /@babel/runtime@7.23.9:
+    resolution: {integrity: sha512-0CX6F+BI2s9dkUqr08KFrAIZgNFj75rdBU/DjCyYLIaV/quFjkk6T+EJ2LkZHyZTbEV4L5p97mNkUsHl2wLFAw==}
+    engines: {node: '>=6.9.0'}
+    dependencies:
+      regenerator-runtime: 0.14.1
 
   /@babel/types@7.22.5:
     resolution: {integrity: sha512-zo3MIHGOkPOfoRXitsgHLjEXmlDaD/5KU1Uzuc9GNiZPhSqVxVRtxuPaSBZDsYZ9qV88AjtMtWW7ww98loJ9KA==}
@@ -1576,7 +1582,7 @@ packages:
     engines: {node: '>=12'}
     dependencies:
       '@babel/code-frame': 7.22.5
-      '@babel/runtime': 7.22.5
+      '@babel/runtime': 7.23.9
       '@types/aria-query': 5.0.1
       aria-query: 5.2.1
       chalk: 4.1.2
@@ -1590,7 +1596,7 @@ packages:
     engines: {node: '>=14'}
     dependencies:
       '@babel/code-frame': 7.22.5
-      '@babel/runtime': 7.22.5
+      '@babel/runtime': 7.23.9
       '@types/aria-query': 5.0.1
       aria-query: 5.2.1
       chalk: 4.1.2
@@ -4284,10 +4290,10 @@ packages:
       - encoding
     dev: false
 
-  /i18next@23.2.8:
-    resolution: {integrity: sha512-wU0pMlJ91ZbB89i77G3YQ11/pBQrzgWpxJYl7HFyA9aU9v3aHMI/oBKQmAJNURr0A8cLG4EHjgSMK8IqQTp4PQ==}
+  /i18next@23.10.0:
+    resolution: {integrity: sha512-/TgHOqsa7/9abUKJjdPeydoyDc0oTi/7u9F8lMSj6ufg4cbC1Oj3f/Jja7zj7WRIhEQKB7Q4eN6y68I9RDxxGQ==}
     dependencies:
-      '@babel/runtime': 7.22.5
+      '@babel/runtime': 7.23.9
     dev: false
 
   /iconv-lite@0.6.3:
@@ -5616,7 +5622,7 @@ packages:
       react: 18.2.0
     dev: false
 
-  /react-i18next@13.0.1(i18next@23.2.8)(react-dom@18.2.0)(react@18.2.0):
+  /react-i18next@13.0.1(i18next@23.10.0)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-gMO6N2GfSfuH7xlHSsZ/mZf+Py9bLm/+EDKIn5fNTuDTjcCcwmMU5UEuGCDk5mdfivbo7ySyYXBN7B9tbGUxiA==}
     peerDependencies:
       i18next: '>= 23.2.3'
@@ -5631,7 +5637,7 @@ packages:
     dependencies:
       '@babel/runtime': 7.22.5
       html-parse-stringify: 3.0.1
-      i18next: 23.2.8
+      i18next: 23.10.0
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     dev: false
@@ -5736,6 +5742,9 @@ packages:
 
   /regenerator-runtime@0.13.11:
     resolution: {integrity: sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==}
+
+  /regenerator-runtime@0.14.1:
+    resolution: {integrity: sha512-dYnhHh0nJoMfnkZs6GmmhFknAGRrLznOu5nc9ML+EJxGvrx6H7teuevqVqCuPcPK//3eDrrjQhehXVx9cnkGdw==}
 
   /regexp.prototype.flags@1.5.0:
     resolution: {integrity: sha512-0SutC3pNudRKgquxGoRGIz946MZVHqbNfPjBdxeOhBrdgDKlRoXmYLQN9xRbrR09ZXWeGAdPuif7egofn6v5LA==}
@@ -7115,7 +7124,7 @@ packages:
       file-saver: 2.0.5
       file-selector: 0.6.0
       flat: 5.0.2
-      i18next: 23.2.8
+      i18next: 23.10.0
       i18next-http-backend: 2.2.1
       keycloak-js: link:libs/keycloak-js
       lodash-es: 4.17.21
@@ -7125,7 +7134,7 @@ packages:
       react-dropzone: 14.2.3(react@18.2.0)
       react-error-boundary: 3.1.4(react@18.2.0)
       react-hook-form: 7.44.3(react@18.2.0)
-      react-i18next: 13.0.1(i18next@23.2.8)(react-dom@18.2.0)(react@18.2.0)
+      react-i18next: 13.0.1(i18next@23.10.0)(react-dom@18.2.0)(react@18.2.0)
       react-router: 6.12.1(react@18.2.0)
       react-router-dom: 6.12.1(react-dom@18.2.0)(react@18.2.0)
       reactflow: 11.7.4(react-dom@18.2.0)(react@18.2.0)
